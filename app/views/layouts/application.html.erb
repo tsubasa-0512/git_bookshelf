@@ -10,6 +10,18 @@
   </head>
 
   <body>
+    <header>
+      <div class="title">
+       <a href="#"><%= image_tag 'title_logo.png' %></a>
+      </div>
+      <nav>
+        <ui class="global nav">
+          <li><%= link_to 'Add Books', root_path %></li>
+          <li><%= link_to 'Post Review', root_path %></li>
+          <li><%= link_to 'Analysis', root_path %></li>
+        </ui>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
