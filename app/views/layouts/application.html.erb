@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Bookshelf</title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter:700&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +10,21 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body id="index">
+    <header>
+      <div class="title">
+       <a class="logo" href="#"><%= image_tag 'title_logo.png' %></a>
+      </div>
+      <nav>
+        <ul class="global-nav">
+          <li><%= link_to 'Add Books', root_path, class:"nav-font" %></li>
+          <li><%= link_to 'Post Review', root_path, class:"nav-font" %></li>
+          <li><%= link_to 'Analysis', root_path, class:"nav-font" %></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrap">
+       <%= yield %>
+    </div>
   </body>
 </html>

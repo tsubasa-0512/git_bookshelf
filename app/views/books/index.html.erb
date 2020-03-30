@@ -1,0 +1,23 @@
+<div class= "top-content">
+    <h2 class="table-title">書籍一覧</h2>
+    <table>
+        <th id="id">ID</th>
+        <th id="title">タイトル</th>
+        <th id="genre">ジャンル</th>
+        <th id="author">著者</th>
+        <th id="reading-times">完読回数</th>
+        <th id="review">レビュー</th>
+        <th id="destroy-books">書籍の削除</th>
+    <% @books.each do |book| %>
+    <tr>
+        <td id="id"><%= book.id %></td>
+        <td id="title"><%= book.title %></td>
+        <td>ジャンル</td>
+        <td><%= book.author %></td>
+        <td>完読回数</td>
+        <td>レビュー</td>
+        <td>書籍の削除</td>
+    </tr>
+    <% end %>
+    </table>
+</div>

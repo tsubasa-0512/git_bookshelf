@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#FAEBD7;
+    color: #333333;
+    font-size: 15px;
+    line-height: 2;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+    margin-top: 40px;
+}
+
+.global-nav{
+    float:right;
+    margin-top: 50px;
+}
+
+.global-nav li{
+    float: left;
+    margin: 0 20px;
+    font-size: 20px;
+    list-style: none;
+    font-family: 'Bitter', serif;
+}
+
+.global-nav li .nav-font{
+    text-decoration: none;
+    color: #006600	;
+}
+
+#wrap{
+    clear:both;
+}
+
+.content{
+    width: 960px;
+    margin: 0 auto;
+}
+
+#index{
+     background-image: url("/images/background.jpg");
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-attachment: fixed;
+     background-size: cover;
+     background-color:rgba(255,255,255,0.5);
+     background-blend-mode:lighten;
+}
+
+.top-content{
+    width: 940px;
+    margin: 80px auto 0px auto;
+}
+
+.table-title{
+    font-family: 'Bitter', serif;
+    font-size: 22px;
+    color: #006600;
+    text-align:center;
+}
+
+table{
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+table th{
+    color:#006600;
+    border: 1px solid #888888;
+}
+
+table td{
+    color:#000000;
+    border: 1px solid #888888;
+}
+    
+#id{
+ width:10px; 
+ text-align:center;
+}
+
+#title{
+    width: 330px;
+}
+
+#genre{
+    width: 100px;
+}
+
+#author{
+    width: 200px;
+}
+
+#reading-times{
+    width: 100px;
+}
+
+#reviews{
+    width: 100px;
+}
+
+#destroy-books{
+    width: 100px;
+}
