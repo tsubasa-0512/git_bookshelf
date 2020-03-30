@@ -1,0 +1,9 @@
+<div class="row-form">
+    <%= form_for @book do |f| %>
+    <h2>書籍追加フォーム</h2>
+    <div class="form-group">
+        <%= f.label :タイトル %>
+        <%= f.text_field :title %>
+    </div>
+<% end %>
+</div>
