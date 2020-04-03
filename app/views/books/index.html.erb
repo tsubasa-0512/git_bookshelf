@@ -16,7 +16,7 @@
         <td><%= book.author %></td>
         <td>完読回数</td>
         <td>レビュー</td>
-        <td>書籍の削除</td>
+        <td><%= link_to '書籍の削除',book_path(book), method: :delete, class:"book-delete-btn" %></td>
     </tr>
     <% end %>
     </table>
