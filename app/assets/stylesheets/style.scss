@@ -101,11 +101,11 @@ table td{
 }
 
 #title{
-    width: 330px;
+    width: 300px;
 }
 
 #genre{
-    width: 100px;
+    width: 130px;
 }
 
 #author{
@@ -126,8 +126,7 @@ table td{
 
 .row-form{
     width: 600px;
-    margin: 80px auto 0px auto;
-    background-color: #ccc;
+    margin: 100px auto 0px auto;
 }
 
 .row-form h2{
@@ -138,4 +137,57 @@ table td{
 }
 
 .form-group{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    }
+
+.form-label{
+    width:70px;
+    margin-right: 5px;
+}
+
+label{
+    font-family: 'Bitter', serif;
+    color: #006600;
+    font-weight: bold;
+    float: left;
+    clear: both;
+    width: 60px;
+    margin-right: 5px;
+}
+
+input[type="text"] {
+  width: 400px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #888888;
+}
+
+.form-select-group{
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.form-select{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #888888;
+}
+
+.btn{
+    font-family: 'Bitter', serif;
+    color: #006600;
+    font-weight: bold;
+    width:100px;
+    border-radius: 5px;
+    border: 1px solid #888888;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
 }
