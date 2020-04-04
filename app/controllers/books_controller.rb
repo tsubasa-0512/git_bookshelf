@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
     def index
-        @books = Book.all
+        @books = Book.search(params[:search])
     end
     
     def new
@@ -9,6 +9,11 @@ class BooksController < ApplicationController
     
     def create
         Book.create(create_params)
+        redirect_to :root and return
+    end
+    
+    def destroy
+        Book.find(params[:id]).destroy
         redirect_to :root and return
     end
     
