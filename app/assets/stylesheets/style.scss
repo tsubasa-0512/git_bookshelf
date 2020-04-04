@@ -199,8 +199,23 @@ input[type="text"] {
     width:80px;
     text-decoration:none;
     border-radius: 5px;
-    background-color: #EAD9FF;
+    background-color: #669933;
     display: block;
     margin: 0 auto;
     padding: 0 5px 0 5px;
+}
+
+#search-form{
+    width: 390px;
+    margin-bottom: 10px;
+}
+
+#search-form-text{
+    width: 330px;
+}
+
+#search-form-btn{
+    font-family: 'Bitter', serif;
+    color: #000000;
+    font-weight: bold;
 }

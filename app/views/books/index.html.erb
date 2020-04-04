@@ -1,5 +1,9 @@
 <div class= "top-content">
     <h2 class="table-title">書籍一覧</h2>
+    <%= form_tag(books_path, method: :get, id: "search-form") do %>
+        <%= text_field_tag :search,"", id: "search-form-text" %>
+        <%= submit_tag '検索', :name => nil, id: "search-form-btn" %>
+    <% end %>
     <table>
         <th id="id">ID</th>
         <th id="title">タイトル</th>
