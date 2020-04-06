@@ -1,0 +1,2 @@
+class Readingtime < ApplicationRecord
+end
