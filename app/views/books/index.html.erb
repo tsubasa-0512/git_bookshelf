@@ -19,7 +19,13 @@
         <td><%= book.genre.genre  %></td>
         <td><%= book.author %></td>
         <td>完読回数</td>
-        <td>レビュー</td>
+        <td>
+            <% if book.review.blank? %> 
+            <%= link_to '投稿', new_book_review_path(book), class:"review-btn" %>  
+            <% else %>
+            <%= link_to '閲覧', book_review_path(book_id: book.id, id: book.review.id), class:"review-btn" %>
+            <% end %>
+        </td>
         <td><%= link_to '書籍の削除',book_path(book), method: :delete, class:"book-delete-btn" %></td>
     </tr>
     <% end %>

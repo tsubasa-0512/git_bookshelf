@@ -1,0 +1,11 @@
+<div class= "top-content">
+    <h2 class="table-title"><%= @book.title %></h2>
+    <div class="clip-box-a">
+        <%= @review.content %>
+    </div>
+    <ul class="review-show">
+    <li><%= link_to '書籍一覧に戻る', root_path, class: "review-show-btn" %></li>
+    <li><%= link_to 'レビューの編集', edit_book_review_path(@book,@review), class: "review-show-btn" %></li>
+    <li><%= link_to 'SNSにシェアする', root_path, class: "review-show-btn" %></li>
+    </ul>
+</div>

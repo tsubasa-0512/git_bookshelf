@@ -1,0 +1,2 @@
+class ReadingtimesController < ApplicationController
+end
