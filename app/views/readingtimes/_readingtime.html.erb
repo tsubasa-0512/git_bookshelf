@@ -1,0 +1,4 @@
+<div id="buttons_<%= book_id %>">
+    <%= link_to "完読", readingtimes_path(book_id: book_id, genre_id: genre_id), method: "post", remote: true, class:"reading-button" %>
+    <%= Readingtime.where(book_id: book_id, genre_id: genre_id).count %>回
+</div>

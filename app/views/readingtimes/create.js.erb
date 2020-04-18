@@ -1,0 +1,1 @@
+$('#buttons_<%= book.id %>').html("<%= j(render partial: 'readingtimes/readingtime',locals: { book_id: @book.id, genre_id: @book.genre.id } ) %>");

@@ -6,6 +6,6 @@
     <ul class="review-show">
     <li><%= link_to '書籍一覧に戻る', root_path, class: "review-show-btn" %></li>
     <li><%= link_to 'レビューの編集', edit_book_review_path(@book,@review), class: "review-show-btn" %></li>
-    <li><%= link_to 'SNSにシェアする', root_path, class: "review-show-btn" %></li>
+    <li id="share-button"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="【<%= @book.title %>のレビュー】&#13;&#10;<%= @review.content %>" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
     </ul>
 </div>

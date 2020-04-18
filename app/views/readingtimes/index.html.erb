@@ -1,0 +1,10 @@
+<div class="top-content">
+ <h2 class="table-title">ジャンル別完読回数</h2>
+ <%= column_chart @readingtime, id: "readingtime-chart", width: "940px", height: "350px", colors:["#006600"] %>
+ <% @genre.each do |g| %>
+ <div class="graph-value-name">
+  <span id="genre-id"><%= g.id %>:</span>
+  <span id="genre"><%= g.genre %></span>
+ </div>
+  <% end %>
+</def>

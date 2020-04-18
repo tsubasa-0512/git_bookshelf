@@ -18,7 +18,9 @@
         <td id="title"><%= book.title %></td>
         <td><%= book.genre.genre  %></td>
         <td><%= book.author %></td>
-        <td>完読回数</td>
+        <td>
+            <%= render partial: 'readingtimes/readingtime', locals: { book_id: book.id, genre_id: book.genre.id } %>
+        </td>
         <td>
             <% if book.review.blank? %> 
             <%= link_to '投稿', new_book_review_path(book), class:"review-btn" %>  

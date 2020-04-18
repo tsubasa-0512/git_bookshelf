@@ -13,13 +13,12 @@
   <body id="index">
     <header>
       <div class="title">
-       <a class="logo" href="#"><%= image_tag 'title_logo.png' %></a>
+       <a href="/" class="logo"><%= image_tag 'title_logo.png' %></a>
       </div>
       <nav>
         <ul class="global-nav">
           <li><%= link_to 'Add Books', new_book_path, class:"nav-font" %></li>
-          <li><%= link_to 'Post Review', root_path, class:"nav-font" %></li>
-          <li><%= link_to 'Analysis', root_path, class:"nav-font" %></li>
+          <li><%= link_to 'Analysis', readingtimes_path, class:"nav-font" %></li>
         </ul>
       </nav>
     </header>
