@@ -28,7 +28,7 @@ header{
 
 .logo{
     float: left;
-    margin-top: 40px;
+    margin-top: 40px;    
 }
 
 .global-nav{
@@ -105,11 +105,11 @@ table td{
 }
 
 #genre{
-    width: 130px;
+    width: 160px;
 }
 
 #author{
-    width: 200px;
+    width: 170px;
 }
 
 #reading-times{
@@ -167,7 +167,7 @@ input[type="text"] {
 }
 
 .form-select-group{
-    width: 320px;
+    width: 382px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -229,7 +229,7 @@ input[type="text"] {
     text-align:center;
     text-decoration:none;
     border-radius: 5px;
-    background-color: #9057FF;
+    background-color: #669933;
     display: block;
     margin: 0 auto;
     padding: 0 5px 0 5px;
@@ -273,6 +273,7 @@ input[type="text"] {
 .review-show {
     width: 68%;
     margin: 0 auto;
+    position: relative;
 }
 
 .review-show li {
@@ -292,4 +293,47 @@ input[type="text"] {
     text-decoration: none;
     text-align: center;
     padding: 5px;
+}
+
+#share-button{
+    margin-left: 275px;
+    position: absolute;
+}
+
+.reading-button{
+    font-family: 'Bitter', serif;
+    color: #000000;
+    font-weight: bold;
+    width:40px;
+    text-align:center;
+    text-decoration:none;
+    border-radius: 5px;
+    background-color: #669933;
+    display: block;
+    margin: 0 10px 0 0;
+    padding: 0 5px 0 5px;
+    float: left;
+    clear: both;
+}
+
+#readingtime-chart{
+    margin: 0 auto 20px auto;
+}
+
+.graph-value-name{
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+#genre-id{
+    margin-left: 2px;
+    font-family: 'Bitter', serif;
+    color: #000000;
+    font-weight: bold;
+}
+
+#genre{
+    font-family: 'Bitter', serif;
+    color: #000000;
+    font-weight: bold;
 }

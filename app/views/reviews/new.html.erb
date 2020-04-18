@@ -1,5 +1,5 @@
 <div class="row-form">
-   <h2><%= @book.title %>のレビュー</h2>
+   <h2>「<%= @book.title %>」のレビュー</h2>
    <%= form_for [@book, @review] do |f| %>
     <div class="form-group">
     <%= f.text_area :content, style: 'width: 100%; height: 300px;' %>
